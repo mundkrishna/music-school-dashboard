@@ -1,15 +1,11 @@
-import MainLayout from "./components/Layouts/MainLayout";
-import Sidebar from "./components/Layouts/Sidebar";
+import MainLayout from "./layouts/MainLayout";
+import Sidebar from "./layouts/Sidebar";
 
 function App() {
   return (
     <div className="flex">
-      <div className="bg-dark-black">
-        <Sidebar />
-      </div>
-      <div>
-        <MainLayout />
-      </div>
+      <Sidebar />
+      <MainLayout />
     </div>
   );
 }
