@@ -22,6 +22,7 @@ module.exports = {
         'custom-pink-dark': '#880E4F',
         'custom-gray-light': '#EEEEEE',
         'custom-gray-dark': '#757575',
+        'custom-blue-gray': '#FFFFFF',
       },
       keyframes: {
         "accordion-down": {
