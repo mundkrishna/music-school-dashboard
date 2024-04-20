@@ -18,6 +18,8 @@ const BestStudents = () => {
   const dispatch = useDispatch();
   const students = useSelector(selectBestStudents);
 
+  console.log(students);
+
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchBestStudents();
@@ -35,7 +37,12 @@ const BestStudents = () => {
         >
           BEST STUDENTS
         </h3>
-        <p className="m-auto mr-0 text-custom-pink-dark">View All Students</p>
+        <p
+          className="mr-0 text-custom-pink-dark"
+          style={{ marginLeft: "78%", marginTop: "35px" }}
+        >
+          View All Students
+        </p>
       </div>
       <Table className="table-auto bg-custom-blue-gray">
         <TableHeader>
@@ -51,7 +58,7 @@ const BestStudents = () => {
         <TableBody>
           {students &&
             students.map((student) => (
-              <TableRow className="border-b border-b-2" key={student.regNo}>
+              <TableRow key={student.id} className="border-b border-b-2">
                 <TableCell>{student.regNo}</TableCell>
                 <TableCell>{student.fName}</TableCell>
                 <TableCell>{student.lName}</TableCell>

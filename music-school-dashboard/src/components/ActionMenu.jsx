@@ -20,6 +20,7 @@ const ActionMenu = ({ course }) => {
       ];
 
   const updateCourseDetails = (courseId, statusLabel) => {
+    setIsMenuOpen(false);
     if (!statusLabel) {
       // TODO: Render the modal to edit course details
       return;

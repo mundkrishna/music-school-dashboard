@@ -10,7 +10,7 @@ export const fetchEnrollments = async () => {
     return enrollments;
   }
   enrollments = await getDataFromApi(
-    "https://run.mocky.io/v3/61927f0c-dbfd-4fef-9483-cce4e6b7fe8f"
+    "https://run.mocky.io/v3/e42128da-7f62-4a40-80e2-05689ef3bcff"
   );
   upsertInLocalStorage("enrollments", enrollments);
   return enrollments;

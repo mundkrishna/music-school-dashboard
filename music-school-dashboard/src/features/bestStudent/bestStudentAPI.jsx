@@ -10,7 +10,7 @@ export const fetchBestStudents = async () => {
     return bestStudents;
   }
   bestStudents = await getDataFromApi(
-    "https://run.mocky.io/v3/d245cd58-8940-4a55-b645-077754bd18a0"
+    "https://run.mocky.io/v3/f78f01e8-1488-42db-89d7-1daf8563adee"
   );
   upsertInLocalStorage("bestStudents", bestStudents);
   return bestStudents;

@@ -23,6 +23,7 @@ const Login = () => {
     navigate("/");
   };
 
+  // TODO: Username password validation needs to be added
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-xs">

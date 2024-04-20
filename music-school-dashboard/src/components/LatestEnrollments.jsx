@@ -28,14 +28,19 @@ const LatestEnrollments = () => {
 
   return (
     <div>
-      <div className="flex">
+      <div style={{ display: "flex" }}>
         <h3
           className="mt-8 mb-8 text-custom-gray-dark"
           style={{ fontSize: "20px" }}
         >
           LATEST ENROLLMENTS
         </h3>
-        <p className="m-auto mr-0 text-custom-pink-dark">View All Courses</p>
+        <p
+          className="text-custom-pink-dark"
+          style={{ marginLeft: "73%", marginTop: "35px" }}
+        >
+          View All Courses
+        </p>
       </div>
       <Table className="table-auto bg-custom-blue-gray">
         <TableHeader>
@@ -50,7 +55,7 @@ const LatestEnrollments = () => {
         <TableBody>
           {enrollments &&
             enrollments.map((enrollment) => (
-              <TableRow className="border-b border-b-2" key={enrollment.enrNo}>
+              <TableRow key={enrollment.id} className="border-b border-b-2">
                 <TableCell>{enrollment.enrNo}</TableCell>
                 <TableCell className="max-w-[20px]">
                   {enrollment.sName}

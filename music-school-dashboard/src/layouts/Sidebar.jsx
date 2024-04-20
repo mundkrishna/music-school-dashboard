@@ -46,8 +46,8 @@ const Sidebar = () => {
       ))}
       {isLoggedIn && (
         <div
-          style={{ position: "fixed", bottom: "0", width: "100%" }}
-          className="my-10 mx-3"
+          style={{ position: "fixed", bottom: "0", width: "50%" }}
+          className="my-8 mx-3"
         >
           <Button
             onClick={handleLogout}
